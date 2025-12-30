@@ -2,6 +2,7 @@
 title: "Kubernetes Basic Commands: Pods, Labels, and Real‑Time Monitoring"
 date: 2025-12-30T14:14:38+05:30
 draft: false
+---
 Introduction
 When working with Kubernetes (or OpenShift), understanding how to watch pods, apply label filters, and perform bulk operations is essential.
 This guide walks through practical commands you can use every day to check pod status, filter resources using labels, and get more visibility into your cluster.
