@@ -6,3 +6,5 @@ require (
 	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v0.0.0-20251215001347-c72b26de8d15
 	github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.0.0-20251229000224-c48b65edb2ae
 )
+
+require github.com/HugoBlox/hugo-blox-builder/modules/blox-analytics v0.3.0 // indirect
