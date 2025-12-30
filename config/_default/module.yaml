@@ -1,25 +1,42 @@
+
 ############################
-## HUGO MODULES
-## Install or uninstall themes and plugins here.
-## Docs: https://gohugo.io/hugo-modules/
+## HUGO MODULES (CORRECTED)
 ############################
 
 imports:
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
 
-# Install any Hugo Blox within the `hugo-blox/blox/` folder
 mounts:
-  - source: hugo-blox/blox/community
-    target: layouts/_partials/blox/community/
-    includeFiles: '**.html'
-  - source: hugo-blox/blox/all-access
-    target: layouts/_partials/blox/
-    includeFiles: '**.html'
-  - source: hugo-blox/blox
-    target: assets/dist/community/blox/
-    includeFiles: '**.css'
+  # CONTENT
+  - source: content
+    target: content
+
+  # STATIC FILES
+  - source: static
+    target: static
+
+  # DATA FILES
+  - source: data
+    target: data
+
+  # THEME LAYOUTS
   - source: layouts
     target: layouts
+
+  # THEME ASSETS
   - source: assets
     target: assets
+
+  # BLOX PARTIALS (Required by HugoBlox)
+  - source: hugo-blox/blox/community
+    target: layouts/_partials/blox/community/
+    includeFiles: "**.html"
+
+  - source: hugo-blox/blox/all-access
+    target: layouts/_partials/blox/
+    includeFiles: "**.html"
+
+  - source: hugo-blox/blox
+    target: assets/dist/community/blox/
+    includeFiles: "**.css"
