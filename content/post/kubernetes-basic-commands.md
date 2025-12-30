@@ -5,7 +5,7 @@ draft: false
 
 Monitor your pods in real-time
 When you add -w(watch), the command stays open and waits for changes.
-Continuous Updates: If a pod’s status changes (e.g., from Pending to Running), a new line will automatically appear in your terminal.
+Continuous Updates:- If a pod’s status changes (e.g., from Pending to Running), a new line will automatically appear in your terminal.
 
 ved@master:~$ oc get pods -w
 NAME READY STATUS RESTARTS AGE
@@ -42,7 +42,7 @@ nginx-pod 1/1 Running 1 (174m ago) 15h app=web
 
 2. The lowercase -l stands for selector (label selector). It acts as a filter.
 
-Analogy: It’s like searching for “All employees who work in the Sales department.”
+Analogy:- It’s like searching for “All employees who work in the Sales department.”
 
 
 ved@master:~$ kubectl get pods -l app=web
@@ -52,7 +52,7 @@ nginx-pod 1/1 Running 1 (175m ago) 15h
 
 3.The uppercase -L stands for label columns. It adds new columns to your output. Used For Visibility (Show more data)
 
-Action: It tells Kubernetes to take the values of the labels environment, app, and tier and display them as separate columns in the terminal.
+Action:- It tells Kubernetes to take the values of the labels environment, app, and tier and display them as separate columns in the terminal.
 
 
 ved@master:~$ kubectl get pods -L environment,app,tier
