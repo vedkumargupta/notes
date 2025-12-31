@@ -1,4 +1,10 @@
 ---
+title: "Monitor your pods in real-time"
+date: 2025-12-30T14:14:38+05:30
+draft: false
+---
+
+---
 Monitor your pods in real-time
 When you add -w (watch), the command stays open and waits for changes. Continuous Updates: If a pod’s status changes (e.g., from Pending → Running), a new line automatically appears in your terminal.
 
