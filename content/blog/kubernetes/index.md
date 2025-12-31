@@ -1,5 +1,5 @@
 ---
-title: "Monitor your pods in real-time"
+title: "Kubernetes Basic commands"
 date: 2025-12-30T14:14:38+05:30
 draft: false
 ---
